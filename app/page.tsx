@@ -645,7 +645,7 @@ export default function Portfolio() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-10">
+            <div className="grid sm:grid-cols-2 gap-12">
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-6">Informations de contact</h3>
                 <div className="space-y-6">
@@ -655,7 +655,7 @@ export default function Portfolio() {
                     </div>
                     <div>
                       <p className="font-medium text-slate-900">Email</p>
-                      <p className="text-slate-600">bemazavajulio72002@email.com</p>
+                      <p className="text-slate-600 ">bemazavajulio72002@email.com</p>
                     </div>
                   </div>
                   
