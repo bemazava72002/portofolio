@@ -57,7 +57,7 @@ export default function Portfolio() {
       title: "Task Management",
       description: "Robust REST API for project management with JWT authentication and Swagger documentation.",
       technologies: ["Django","Next.js", "PostgreSQL", "Swagger"],
-      image: "https://images.pexels.com/photos/5439379/pexels-photo-5439379.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "tesy",
       github: "https://github.com/bemazava72002/task-management/",
       demo: "https://demo.com",
       category: "FullStack"
@@ -457,7 +457,7 @@ export default function Portfolio() {
                 <Card key={index} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
                   <div className="relative overflow-hidden">
                     <img 
-                      src={} 
+                      src={project.image} 
                       alt={project.title}
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
