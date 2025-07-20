@@ -675,7 +675,7 @@ export default function Portfolio() {
                     </div>
                     <div>
                       <p className="font-medium text-slate-900 ">Localisation</p>
-                      <p className="text-slate-600 text-sm">Fianarantsoa, Madagascar</p>
+                      <p className="text-slate-600 font-medium">Fianarantsoa, Madagascar</p>
                     </div>
                   </div>
                 </div>
