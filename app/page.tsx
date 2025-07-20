@@ -645,12 +645,12 @@ export default function Portfolio() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12">
+            <div className="grid md:grid-cols-4 gap-10">
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-6">Informations de contact</h3>
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <div className="w-auto h-12 bg-blue-100 rounded-lg  flex items-center justify-center">
                       <Mail className="w-6 h-6 text-blue-600" />
                     </div>
                     <div>
