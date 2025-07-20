@@ -645,7 +645,7 @@ export default function Portfolio() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-4 gap-12">
+            <div className="grid md:grid-cols-2 gap-10">
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-6">Informations de contact</h3>
                 <div className="space-y-6">
