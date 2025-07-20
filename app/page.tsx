@@ -176,7 +176,7 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 overflow-x-hidden">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div className="container mx-auto px-4">
@@ -727,7 +727,7 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="bg-slate-900 text-white py-12">
-        <div className="container mx-auto px-auto">
+        <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="font-bold text-xl mb-4">
               BEMAZAVA<span className="text-blue-400">.</span>
