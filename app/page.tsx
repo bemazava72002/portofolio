@@ -41,7 +41,6 @@ export default function Portfolio() {
     { name: "Next.js", category: "Fullstack", level: 60, icon: <Globe className="w-5 h-5" /> },
     { name: "Django", category: "Backend", level: 80, icon: <Database className="w-5 h-5" /> },
     { name: "Spring Boot", category: "Backend", level: 62, icon: <Server className="w-5 h-5" /> },
-    { name: "Spring MVC", category: "Backend", level: 55, icon: <Server className="w-5 h-5" /> },
     { name: "JavaScript", category: "Language", level: 75, icon: <Code className="w-5 h-5" /> },
     { name: "TypeScript", category: "Language", level: 61, icon: <Code className="w-5 h-5" /> },
     { name: "Python", category: "Language", level: 85, icon: <Code className="w-5 h-5" /> },
@@ -57,7 +56,7 @@ export default function Portfolio() {
     {
       title: "Task Management",
       description: "Robust REST API for project management with JWT authentication and Swagger documentation.",
-      technologies: ["Django","Next.js", "PostgreSQL", "JWT", "Swagger"],
+      technologies: ["Django","Next.js", "PostgreSQL", "Swagger"],
       image: "https://images.pexels.com/photos/5439379/pexels-photo-5439379.jpeg?auto=compress&cs=tinysrgb&w=800",
       github: "https://github.com/bemazava72002/task-management/",
       demo: "https://demo.com",
@@ -77,7 +76,7 @@ export default function Portfolio() {
       description: "Design and development of a legal report management application",
       achievements: [
         "Creating a robust REST API",
-        "Creating an interactive and responsive front-end",
+        "Creating an interactive and responsive user interface",
         "Optimizing database queries",
         "Test the application"
       ]
@@ -204,7 +203,7 @@ export default function Portfolio() {
       </header>
 
       {/* Hero Section */}
-      <section id="accueil" className="pt-32 pb-20">
+      <section id="home" className="pt-32 pb-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
@@ -247,7 +246,7 @@ export default function Portfolio() {
               <a href="https://linkedin.com/in/juliobemazava" className="text-slate-600 hover:text-blue-600 transition-colors">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="mailto:bemazavajulio72002@email.com" className="text-slate-600 hover:text-blue-600 transition-colors">
+              <a href="mailto:bemazavajulio72002@gmail.com" className="text-slate-600 hover:text-blue-600 transition-colors">
                 <Mail className="w-6 h-6" />
               </a>
             </div>
@@ -612,7 +611,7 @@ export default function Portfolio() {
                     </div>
                     <div>
                       <p className="font-medium text-slate-900">E-mail</p>
-                      <p className="text-slate-600 text-sm">bemazavajulio72002@email.com</p>
+                      <p className="text-slate-600 text-sm">bemazavajulio72002@gmail.com</p>
                     </div>
                   </div>
                   
@@ -699,7 +698,7 @@ export default function Portfolio() {
               <a href="https://linkedin.com/in/juliobemazava" className="text-slate-400 hover:text-white transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="mailto:bemazavajulio72002@email.com" className="text-slate-400 hover:text-white transition-colors">
+              <a href="mailto:bemazavajulio72002@gmail.com" className="text-slate-400 hover:text-white transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
