@@ -33,7 +33,7 @@ import {
 
 export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("accueil");
+  const [activeSection, setActiveSection] = useState("home");
 
   const skills = [
     { name: "Node.js", category: "Backend", level: 70, icon: <Server className="w-5 h-5" /> },
@@ -143,7 +143,7 @@ export default function Portfolio() {
             </div>
             
             <nav className="hidden md:flex space-x-8">
-              {['accueil', 'a-propos', 'competences', 'projets', 'experience', 'contact'].map((item) => (
+              {['home', 'about', 'skills', 'projects', 'experience', 'contact'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item)}
@@ -183,7 +183,7 @@ export default function Portfolio() {
           <div className="md:hidden bg-white border-t border-slate-200">
             <div className="container mx-auto px-4 py-4">
               <div className="flex flex-col space-y-4">
-                {['accueil', 'a-propos', 'competences', 'projets', 'experience', 'contact'].map((item) => (
+                {['home', 'about', 'skills', 'projects', 'experience', 'contact'].map((item) => (
                   <button
                     key={item}
                     onClick={() => scrollToSection(item)}
@@ -226,7 +226,7 @@ export default function Portfolio() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button 
                 size="lg" 
-                onClick={() => scrollToSection('projets')}
+                onClick={() => scrollToSection('projects')}
                 className="bg-blue-600 hover:bg-blue-700"
               >
                 Get in touch my project
@@ -256,7 +256,7 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section id="a-propos" className="py-20 bg-white">
+      <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
@@ -349,7 +349,7 @@ export default function Portfolio() {
       </section>
 
       {/* Skills Section */}
-      <section id="competences" className="py-20 bg-gradient-to-br from-slate-50 to-slate-100">
+      <section id="skills" className="py-20 bg-gradient-to-br from-slate-50 to-slate-100">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -361,7 +361,7 @@ export default function Portfolio() {
 
             <Tabs defaultValue="all" className="w-full">
               <TabsList className="grid w-full grid-cols-5 mb-12">
-                <TabsTrigger value="all">Toutes</TabsTrigger>
+                <TabsTrigger value="all">Alls</TabsTrigger>
                 <TabsTrigger value="Frontend">Frontend</TabsTrigger>
                 <TabsTrigger value="Backend">Backend</TabsTrigger>
                 <TabsTrigger value="Database">Database</TabsTrigger>
@@ -439,7 +439,7 @@ export default function Portfolio() {
       </section>
 
       
-      <section id="projets" className="py-20 bg-white">
+      <section id="projects" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -504,7 +504,7 @@ export default function Portfolio() {
             <Tabs defaultValue="experience" className="w-full">
               <TabsList className="grid w-full grid-cols-3 mb-12">
                 <TabsTrigger value="experience">Expérience</TabsTrigger>
-                <TabsTrigger value="formation">Education</TabsTrigger>
+                <TabsTrigger value="Eduction">Education</TabsTrigger>
                 <TabsTrigger value="certifications">Certifications</TabsTrigger>
               </TabsList>
 
@@ -543,7 +543,7 @@ export default function Portfolio() {
                 </div>
               </TabsContent>
 
-              <TabsContent value="Training">
+              <TabsContent value="Eduction">
                 <div className="space-y-8">
                   {education.map((edu, index) => (
                     <Card key={index} className="hover:shadow-lg transition-shadow">
