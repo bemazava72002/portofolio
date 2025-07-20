@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -8,17 +8,16 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { 
-  Github, 
-  Linkedin, 
-  Mail, 
-  Phone, 
-  MapPin, 
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Phone,
+  MapPin,
   ExternalLink,
   Code,
   Database,
   Server,
-  
   Globe,
   Download,
   Send,
@@ -26,9 +25,8 @@ import {
   Briefcase,
   GraduationCap,
   Award,
-  
   Menu,
-  X
+  X,
 } from "lucide-react";
 
 export default function Portfolio() {
@@ -48,47 +46,54 @@ export default function Portfolio() {
     { name: "Java", category: "Language", level: 73, icon: <Code className="w-5 h-5" /> },
     { name: "PostgreSQL", category: "Database", level: 67, icon: <Database className="w-5 h-5" /> },
     { name: "MySQL", category: "Database", level: 87, icon: <Database className="w-5 h-5" /> },
-    
     { name: "MongoDB", category: "Database", level: 64, icon: <Database className="w-5 h-5" /> },
   ];
 
   const projects = [
     {
       title: "E-Commerce Platform",
-      description: "Plateforme e-commerce complète avec gestion des paiements, authentification utilisateur et tableau de bord admin.",
+      description:
+        "Plateforme e-commerce complète avec gestion des paiements, authentification utilisateur et tableau de bord admin.",
       technologies: ["Next.js", "Node.js", "PostgreSQL", "JWT", "Stripe"],
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image:
+        "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
       github: "https://github.com/bemazava",
       demo: "https://demo.com",
-      category: "Fullstack"
+      category: "Fullstack",
     },
     {
       title: "Task Management",
-      description: "API REST robuste pour la gestion de projets avec authentification JWT et documentation Swagger.",
-      technologies: ["Django","Next.js", "PostgreSQL", "JWT", "Swagger"],
-      image: "https://images.pexels.com/photos/5439379/pexels-photo-5439379.jpeg?auto=compress&cs=tinysrgb&w=800",
+      description:
+        "API REST robuste pour la gestion de projets avec authentification JWT et documentation Swagger.",
+      technologies: ["Django", "Next.js", "PostgreSQL", "JWT", "Swagger"],
+      image:
+        "https://images.pexels.com/photos/5439379/pexels-photo-5439379.jpeg?auto=compress&cs=tinysrgb&w=800",
       github: "https://github.com/bemazava72002/task-management/",
       demo: "https://demo.com",
-      category: "Backend"
+      category: "Backend",
     },
     {
       title: "Real-time Chat App",
-      description: "Application de chat en temps réel avec notifications push et partage de fichiers.",
+      description:
+        "Application de chat en temps réel avec notifications push et partage de fichiers.",
       technologies: ["React.js", "Socket.io", "Node.js", "MongoDB"],
-      image: "https://images.pexels.com/photos/1576937/pexels-photo-1576937.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image:
+        "https://images.pexels.com/photos/1576937/pexels-photo-1576937.jpeg?auto=compress&cs=tinysrgb&w=800",
       github: "https://github.com/bemazava72002",
       demo: "https://demo.com",
-      category: "Frontend"
+      category: "Frontend",
     },
     {
       title: "Analytics Dashboard",
-      description: "Tableau de bord d'analyse avec visualisations interactives et rapports automatisés.",
+      description:
+        "Tableau de bord d'analyse avec visualisations interactives et rapports automatisés.",
       technologies: ["Django", "React.js", "Chart.js", "Redis"],
-      image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image:
+        "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800",
       github: "https://github.com/bemazava72002",
       demo: "https://demo.com",
-      category: "Fullstack"
-    }
+      category: "Fullstack",
+    },
   ];
 
   const experiences = [
@@ -96,23 +101,25 @@ export default function Portfolio() {
       title: "Développeur Full Stack Senior",
       company: "TechCorp Solutions",
       period: "2022 - Présent",
-      description: "Développement d'applications web complexes avec Next.js et Node.js, encadrement d'équipe junior.",
+      description:
+        "Développement d'applications web complexes avec Next.js et Node.js, encadrement d'équipe junior.",
       achievements: [
         "Amélioration des performances de 40% sur les applications principales",
         "Mise en place de l'architecture microservices",
-        "Formation de 5 développeurs juniors"
-      ]
+        "Formation de 5 développeurs juniors",
+      ],
     },
     {
       title: "Développeur Full Stack",
       company: "Digital Innovation Lab",
       period: "2020 - 2022",
-      description: "Conception et développement d'applications web avec React.js, Django et Spring Boot.",
+      description:
+        "Conception et développement d'applications web avec React.js, Django et Spring Boot.",
       achievements: [
         "Développement de 12 applications web complètes",
         "Réduction du temps de développement de 30%",
-        "Intégration d'APIs tierces complexes"
-      ]
+        "Intégration d'APIs tierces complexes",
+      ],
     },
     {
       title: "Développeur FullStack",
@@ -122,9 +129,9 @@ export default function Portfolio() {
       achievements: [
         "Création d'un APIs REST robuste",
         "Optimisation des requêtes base de données",
-        "Faire le teste de l'application"
-      ]
-    }
+        "Faire le teste de l'application",
+      ],
+    },
   ];
 
   const education = [
@@ -132,33 +139,29 @@ export default function Portfolio() {
       degree: "Master en Informatique",
       school: "École Nationale d'Informatique",
       period: "2024 - 2025",
-      description: "Spécialisation en développement web et génie logiciel"
+      description: "Spécialisation en développement web et génie logiciel",
     },
     {
       degree: "Licence en Informatique",
       school: "Ecole National d'Informatique",
       period: "2023 - 2024",
-      description: "Ecole Nationale d'Informatique"
-    }
+      description: "Ecole Nationale d'Informatique",
+    },
   ];
 
-  const certifications = [
-    "Cybersecurité",
-    "Data Analyst",
-   
-  ];
+  const certifications = ["Cybersecurité", "Data Analyst"];
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['accueil', 'a-propos', 'competences', 'projets', 'experience', 'contact'];
+      const sections = ["accueil", "a-propos", "competences", "projets", "experience", "contact"];
       const scrollY = window.scrollY;
-      
-      sections.forEach(section => {
+
+      sections.forEach((section) => {
         const element = document.getElementById(section);
         if (element) {
           const offsetTop = element.offsetTop - 100;
           const height = element.offsetHeight;
-          
+
           if (scrollY >= offsetTop && scrollY < offsetTop + height) {
             setActiveSection(section);
           }
@@ -166,12 +169,12 @@ export default function Portfolio() {
       });
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
     setIsMenuOpen(false);
   };
 
@@ -184,36 +187,37 @@ export default function Portfolio() {
             <div className="font-bold text-xl text-slate-900">
               BEMAZAVA<span className="text-blue-600">.</span>
             </div>
-            
+
             <nav className="hidden md:flex space-x-8">
-              {['accueil', 'a-propos', 'competences', 'projets', 'experience', 'contact'].map((item) => (
-                <button
-                  key={item}
-                  onClick={() => scrollToSection(item)}
-                  className={`text-sm font-medium transition-colors capitalize ${
-                    activeSection === item ? 'text-blue-600' : 'text-slate-600 hover:text-blue-600'
-                  }`}
-                >
-                  {item.replace('-', ' ')}
-                </button>
-              ))}
+              {["accueil", "a-propos", "competences", "projets", "experience", "contact"].map(
+                (item) => (
+                  <button
+                    key={item}
+                    onClick={() => scrollToSection(item)}
+                    className={`text-sm font-medium transition-colors capitalize ${
+                      activeSection === item
+                        ? "text-blue-600"
+                        : "text-slate-600 hover:text-blue-600"
+                    }`}
+                  >
+                    {item.replace("-", " ")}
+                  </button>
+                )
+              )}
             </nav>
 
             <div className="flex items-center space-x-4">
-              <Button 
-                variant="outline" 
-                size="sm" 
-                className="hidden md:flex items-center space-x-2"
-              >
+              <Button variant="outline" size="sm" className="hidden md:flex items-center space-x-2">
                 <Download className="w-4 h-4" />
                 <span>CV</span>
               </Button>
-              
-              <Button 
-                variant="ghost" 
+
+              <Button
+                variant="ghost"
                 size="sm"
                 className="md:hidden"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
+                aria-label="Toggle menu"
               >
                 {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </Button>
@@ -226,19 +230,22 @@ export default function Portfolio() {
           <div className="md:hidden bg-white border-t border-slate-200">
             <div className="container mx-auto px-4 py-4">
               <div className="flex flex-col space-y-4">
-                {['accueil', 'a-propos', 'competences', 'projets', 'experience', 'contact'].map((item) => (
-                  <button
-                    key={item}
-                    onClick={() => scrollToSection(item)}
-                    className="text-left text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors capitalize"
-                  >
-                    {item.replace('-', ' ')}
-                  </button>
-                ))}
-                <a href="#"><Button variant="outline" size="sm" className="w-fit">
-                  <Download className="w-4 h-4 mr-2" />
-                  Télécharger CV
-                </Button>
+                {["accueil", "a-propos", "competences", "projets", "experience", "contact"].map(
+                  (item) => (
+                    <button
+                      key={item}
+                      onClick={() => scrollToSection(item)}
+                      className="w-full text-left py-3 text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors capitalize"
+                    >
+                      {item.replace("-", " ")}
+                    </button>
+                  )
+                )}
+                <a href="#">
+                  <Button variant="outline" size="sm" className="w-fit">
+                    <Download className="w-4 h-4 mr-2" />
+                    Télécharger CV
+                  </Button>
                 </a>
               </div>
             </div>
@@ -251,47 +258,29 @@ export default function Portfolio() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
-              <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                <User className="w-16 h-16 text-white" />
-              </div>
-              <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-4">
-                BEMAZAVA <span className="text-blue-600">Julio</span>
-              </h1>
-              <p className="text-xl md:text-2xl text-slate-600 mb-2">
-                Développeur Web Full Stack
-              </p>
-              <p className="text-lg text-slate-500 max-w-2xl mx-auto">
-                Passionné par la création d'applications web modernes et performantes avec 
-                Node.js, React.js,Next.js, Django, Spring Boot
-              </p>
+              <Badge variant="outline" className="uppercase tracking-widest text-blue-600 px-3 py-1">
+                Développeur FullStack
+              </Badge>
             </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button 
-                size="lg" 
-                onClick={() => scrollToSection('projets')}
-                className="bg-blue-600 hover:bg-blue-700"
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-slate-900">
+              Je suis Julio, développeur fullstack passionné
+            </h1>
+            <p className="text-lg md:text-xl text-slate-700 mb-8">
+              Je crée des applications web modernes et performantes pour aider les entreprises à
+              réussir en ligne.
+            </p>
+            <div className="flex justify-center space-x-4">
+              <Button
+                onClick={() => scrollToSection("contact")}
+                className="bg-blue-600 hover:bg-blue-700 text-white"
               >
-                Voir mes projets
+                Contactez-moi
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                onClick={() => scrollToSection('contact')}
+              <a
+                href="#"
+                className="inline-flex items-center text-blue-600 hover:underline font-medium"
               >
-                Me contacter
-              </Button>
-            </div>
-
-            <div className="flex justify-center space-x-6">
-              <a href="https://github.com/bemazava72002" className="text-slate-600 hover:text-blue-600 transition-colors">
-                <Github className="w-6 h-6" />
-              </a>
-              <a href="https://linkedin.com/in/juliobemazava" className="text-slate-600 hover:text-blue-600 transition-colors">
-                <Linkedin className="w-6 h-6" />
-              </a>
-              <a href="mailto:bemazavajulio72002@email.com" className="text-slate-600 hover:text-blue-600 transition-colors">
-                <Mail className="w-6 h-6" />
+                <Download className="w-5 h-5 mr-1" /> Télécharger mon CV
               </a>
             </div>
           </div>
@@ -299,458 +288,296 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section id="a-propos" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">À propos de moi</h2>
-              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Développeur full stack avec plus de 3 ans d'expérience dans la création d'applications web innovantes
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <p className="text-slate-600 mb-6 leading-relaxed">
-                  Passionné par le développement web depuis mes débuts, j'ai acquis une expertise solide 
-                  dans les technologies modernes tant côté frontend que backend. Mon approche consiste à 
-                  créer des solutions élégantes et performantes qui répondent aux besoins spécifiques de chaque projet.
-                </p>
-                <p className="text-slate-600 mb-6 leading-relaxed">
-                  Je maîtrise parfaitement l'écosystème JavaScript/TypeScript avec Node.js, React.js et Next.js, 
-                  ainsi que les frameworks Java Spring Boot et Spring MVC, et Python Django. Cette polyvalence 
-                  me permet d'adapter mes solutions aux contraintes techniques et aux préférences de chaque équipe.
-                </p>
-                
-                <div className="grid grid-cols-2 gap-4 mt-8">
-                  <div className="text-center p-4 bg-blue-50 rounded-lg">
-                    <div className="text-2xl font-bold text-blue-600">3+</div>
-                    <div className="text-sm text-slate-600">Années d'expérience</div>
-                  </div>
-                  <div className="text-center p-4 bg-green-50 rounded-lg">
-                    <div className="text-2xl font-bold text-green-600">10+</div>
-                    <div className="text-sm text-slate-600">Projets réalisés</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="space-y-6">
-                <Card>
-                  <CardContent className="p-6">
-                    <div className="flex items-center space-x-4 mb-4">
-                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                        <Code className="w-6 h-6 text-blue-600" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-slate-900">Frontend</h3>
-                        <p className="text-slate-600 text-sm">Interfaces utilisateur modernes</p>
-                      </div>
-                    </div>
-                    <p className="text-slate-600 text-sm">
-                      React.js, Next.js, TypeScript, Tailwind CSS
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardContent className="p-6">
-                    <div className="flex items-center space-x-4 mb-4">
-                      <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                        <Server className="w-6 h-6 text-green-600" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-slate-900">Backend</h3>
-                        <p className="text-slate-600 text-sm">APIs robustes et sécurisées</p>
-                      </div>
-                    </div>
-                    <p className="text-slate-600 text-sm">
-                      Node.js, Django, Spring Boot, Spring MVC
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardContent className="p-6">
-                    <div className="flex items-center space-x-4 mb-4">
-                      <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                        <Database className="w-6 h-6 text-purple-600" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-slate-900">Database</h3>
-                        <p className="text-slate-600 text-sm">Gestion de données efficace</p>
-                      </div>
-                    </div>
-                    <p className="text-slate-600 text-sm">
-                      PostgreSQL, MongoDB, Redis, MySQL
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-          </div>
+      <section id="a-propos" className="py-12 md:py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-900">À propos de moi</h2>
+          <p className="text-lg text-slate-700 leading-relaxed">
+            Je suis un développeur fullstack expérimenté avec un fort intérêt pour les nouvelles
+            technologies et les bonnes pratiques. Passionné par la création d'applications web
+            performantes, maintenables et évolutives, je mets l’accent sur la qualité du code et
+            l’expérience utilisateur.
+          </p>
         </div>
       </section>
 
       {/* Skills Section */}
-      <section id="competences" className="py-20 bg-gradient-to-br from-slate-50 to-slate-100">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Compétences techniques</h2>
-              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Maîtrise des technologies modernes pour créer des solutions web performantes
-              </p>
-            </div>
+      <section id="competences" className="py-12 md:py-20">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-slate-900 text-center">Compétences</h2>
 
-            <Tabs defaultValue="all" className="w-full">
-              <TabsList className="grid w-full grid-cols-5 mb-12">
-                <TabsTrigger value="all">Toutes</TabsTrigger>
-                <TabsTrigger value="Frontend">Frontend</TabsTrigger>
-                <TabsTrigger value="Backend">Backend</TabsTrigger>
-                <TabsTrigger value="Database">Database</TabsTrigger>
-                <TabsTrigger value="Language">Languages</TabsTrigger>
-              </TabsList>
+          <Tabs defaultValue="backend" className="max-w-4xl mx-auto">
+            <TabsList className="justify-center mb-8">
+              <TabsTrigger value="backend" className="capitalize">
+                Backend
+              </TabsTrigger>
+              <TabsTrigger value="frontend" className="capitalize">
+                Frontend
+              </TabsTrigger>
+              <TabsTrigger value="language" className="capitalize">
+                Langages
+              </TabsTrigger>
+              <TabsTrigger value="database" className="capitalize">
+                Bases de données
+              </TabsTrigger>
+            </TabsList>
 
-              <TabsContent value="all" className="space-y-6">
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {skills.map((skill, index) => (
-                    <Card key={index} className="hover:shadow-lg transition-shadow">
-                      <CardContent className="p-6">
-                        <div className="flex items-center space-x-3 mb-4">
-                          <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                            {skill.icon}
-                          </div>
-                          <div>
-                            <h3 className="font-semibold text-slate-900">{skill.name}</h3>
-                            <Badge variant="secondary" className="text-xs">{skill.category}</Badge>
-                          </div>
+            <TabsContent value="backend">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                {skills
+                  .filter((skill) => skill.category === "Backend")
+                  .map(({ name, level, icon }) => (
+                    <Card key={name} className="p-4 flex items-center space-x-4">
+                      <div className="text-blue-600">{icon}</div>
+                      <div className="flex-1">
+                        <div className="flex justify-between font-semibold text-slate-900 mb-1">
+                          <span>{name}</span>
+                          <span>{level}%</span>
                         </div>
-                        <div className="space-y-2">
-                          <div className="flex justify-between text-sm">
-                            <span className="text-slate-600">Maîtrise</span>
-                            <span className="text-slate-900 font-medium">{skill.level}%</span>
-                          </div>
-                          <div className="w-full bg-slate-200 rounded-full h-2">
-                            <div 
-                              className="bg-blue-600 h-2 rounded-full transition-all duration-1000"
-                              style={{ width: `${skill.level}%` }}
-                            />
-                          </div>
+                        <div className="w-full h-2 rounded-full bg-slate-200 overflow-hidden">
+                          <div
+                            className="h-2 bg-blue-600"
+                            style={{ width: `${level}%` }}
+                          ></div>
                         </div>
-                      </CardContent>
+                      </div>
                     </Card>
                   ))}
-                </div>
-              </TabsContent>
+              </div>
+            </TabsContent>
 
-              {['Frontend', 'Backend', 'Database', 'Language'].map(category => (
-                <TabsContent key={category} value={category} className="space-y-6">
-                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {skills.filter(skill => skill.category === category).map((skill, index) => (
-                      <Card key={index} className="hover:shadow-lg transition-shadow">
-                        <CardContent className="p-6">
-                          <div className="flex items-center space-x-3 mb-4">
-                            <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                              {skill.icon}
-                            </div>
-                            <div>
-                              <h3 className="font-semibold text-slate-900">{skill.name}</h3>
-                              <Badge variant="secondary" className="text-xs">{skill.category}</Badge>
-                            </div>
-                          </div>
-                          <div className="space-y-2">
-                            <div className="flex justify-between text-sm">
-                              <span className="text-slate-600">Maîtrise</span>
-                              <span className="text-slate-900 font-medium">{skill.level}%</span>
-                            </div>
-                            <div className="w-full bg-slate-200 rounded-full h-2">
-                              <div 
-                                className="bg-blue-600 h-2 rounded-full transition-all duration-1000"
-                                style={{ width: `${skill.level}%` }}
-                              />
-                            </div>
-                          </div>
-                        </CardContent>
-                      </Card>
-                    ))}
-                  </div>
-                </TabsContent>
-              ))}
-            </Tabs>
-          </div>
+            <TabsContent value="frontend">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                {skills
+                  .filter((skill) => skill.category === "Frontend")
+                  .map(({ name, level, icon }) => (
+                    <Card key={name} className="p-4 flex items-center space-x-4">
+                      <div className="text-blue-600">{icon}</div>
+                      <div className="flex-1">
+                        <div className="flex justify-between font-semibold text-slate-900 mb-1">
+                          <span>{name}</span>
+                          <span>{level}%</span>
+                        </div>
+                        <div className="w-full h-2 rounded-full bg-slate-200 overflow-hidden">
+                          <div
+                            className="h-2 bg-blue-600"
+                            style={{ width: `${level}%` }}
+                          ></div>
+                        </div>
+                      </div>
+                    </Card>
+                  ))}
+              </div>
+            </TabsContent>
+
+            <TabsContent value="language">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                {skills
+                  .filter((skill) => skill.category === "Language")
+                  .map(({ name, level, icon }) => (
+                    <Card key={name} className="p-4 flex items-center space-x-4">
+                      <div className="text-blue-600">{icon}</div>
+                      <div className="flex-1">
+                        <div className="flex justify-between font-semibold text-slate-900 mb-1">
+                          <span>{name}</span>
+                          <span>{level}%</span>
+                        </div>
+                        <div className="w-full h-2 rounded-full bg-slate-200 overflow-hidden">
+                          <div
+                            className="h-2 bg-blue-600"
+                            style={{ width: `${level}%` }}
+                          ></div>
+                        </div>
+                      </div>
+                    </Card>
+                  ))}
+              </div>
+            </TabsContent>
+
+            <TabsContent value="database">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                {skills
+                  .filter((skill) => skill.category === "Database")
+                  .map(({ name, level, icon }) => (
+                    <Card key={name} className="p-4 flex items-center space-x-4">
+                      <div className="text-blue-600">{icon}</div>
+                      <div className="flex-1">
+                        <div className="flex justify-between font-semibold text-slate-900 mb-1">
+                          <span>{name}</span>
+                          <span>{level}%</span>
+                        </div>
+                        <div className="w-full h-2 rounded-full bg-slate-200 overflow-hidden">
+                          <div
+                            className="h-2 bg-blue-600"
+                            style={{ width: `${level}%` }}
+                          ></div>
+                        </div>
+                      </div>
+                    </Card>
+                  ))}
+              </div>
+            </TabsContent>
+          </Tabs>
         </div>
       </section>
 
       {/* Projects Section */}
-      <section id="projets" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Mes projets</h2>
-              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Découvrez quelques-uns de mes projets récents qui démontrent mes compétences techniques
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {projects.map((project, index) => (
-                <Card key={index} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
-                  <div className="relative overflow-hidden">
-                    <img 
-                      src={project.image} 
-                      alt={project.title}
-                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute top-4 right-4">
-                      <Badge className="bg-blue-600">{project.category}</Badge>
-                    </div>
+      <section id="projets" className="py-12 md:py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-slate-900 text-center">Projets</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
+              <Card
+                key={index}
+                className="group cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-48 sm:h-64 object-cover rounded-t-lg group-hover:scale-105 transition-transform duration-300"
+                />
+                <CardContent className="p-4">
+                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                  <p className="text-sm text-slate-700 mb-3">{project.description}</p>
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {project.technologies.map((tech) => (
+                      <Badge key={tech} variant="secondary" className="capitalize">
+                        {tech}
+                      </Badge>
+                    ))}
                   </div>
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">{project.title}</h3>
-                    <p className="text-slate-600 mb-4 leading-relaxed">{project.description}</p>
-                    
-                    <div className="flex flex-wrap gap-2 mb-6">
-                      {project.technologies.map((tech, techIndex) => (
-                        <Badge key={techIndex} variant="secondary">{tech}</Badge>
-                      ))}
-                    </div>
-                    
-                    <div className="flex space-x-4">
-                      <Button variant="outline" size="sm" className="flex items-center space-x-2">
-                        <Github className="w-4 h-4" />
-                        <span>Code</span>
-                      </Button>
-                      <Button size="sm" className="flex items-center space-x-2">
-                        <ExternalLink className="w-4 h-4" />
-                        <span>Demo</span>
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+                  <div className="flex space-x-4">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:underline flex items-center space-x-1"
+                      aria-label={`Voir le code source de ${project.title}`}
+                    >
+                      <Github className="w-5 h-5" /> <span>Code</span>
+                    </a>
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:underline flex items-center space-x-1"
+                      aria-label={`Voir la démo de ${project.title}`}
+                    >
+                      <ExternalLink className="w-5 h-5" /> <span>Démo</span>
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-20 bg-gradient-to-br from-slate-50 to-slate-100">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Expérience & Formation</h2>
-              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Mon parcours professionnel et académique dans le développement web
-              </p>
+      <section id="experience" className="py-12 md:py-20">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-slate-900 text-center">Expériences</h2>
+          <div className="space-y-8">
+            {experiences.map((exp, i) => (
+              <Card key={i} className="p-6 shadow-lg rounded-lg">
+                <h3 className="text-xl font-semibold mb-1">{exp.title}</h3>
+                <p className="italic text-sm text-slate-600 mb-2">
+                  {exp.company} - {exp.period}
+                </p>
+                <p className="text-slate-700 mb-3">{exp.description}</p>
+                <ul className="list-disc list-inside text-slate-700 space-y-1">
+                  {exp.achievements.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Education Section */}
+      <section id="education" className="py-12 md:py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-slate-900 text-center">Formation</h2>
+          <div className="space-y-8 max-w-3xl mx-auto">
+            {education.map((edu, i) => (
+              <Card key={i} className="p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold mb-1">{edu.degree}</h3>
+                <p className="italic text-sm text-slate-600 mb-2">{edu.school} - {edu.period}</p>
+                <p className="text-slate-700">{edu.description}</p>
+              </Card>
+            ))}
+          </div>
+          <div className="mt-12 text-center">
+            <h3 className="text-2xl font-semibold mb-4">Certifications</h3>
+            <div className="flex justify-center gap-6 flex-wrap">
+              {certifications.map((cert, i) => (
+                <Badge key={i} variant="outline" className="text-blue-600 px-4 py-2 rounded-full">
+                  {cert}
+                </Badge>
+              ))}
             </div>
-
-            <Tabs defaultValue="experience" className="w-full">
-              <TabsList className="grid w-full grid-cols-3 mb-12">
-                <TabsTrigger value="experience">Expérience</TabsTrigger>
-                <TabsTrigger value="formation">Formation</TabsTrigger>
-                <TabsTrigger value="certifications">Certifications</TabsTrigger>
-              </TabsList>
-
-              <TabsContent value="experience">
-                <div className="space-y-8">
-                  {experiences.map((exp, index) => (
-                    <Card key={index} className="hover:shadow-lg transition-shadow">
-                      <CardContent className="p-8">
-                        <div className="flex items-start space-x-4">
-                          <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                            <Briefcase className="w-6 h-6 text-blue-600" />
-                          </div>
-                          <div className="flex-1">
-                            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                              <h3 className="text-xl font-bold text-slate-900">{exp.title}</h3>
-                              <Badge variant="outline">{exp.period}</Badge>
-                            </div>
-                            <p className="text-blue-600 font-medium mb-3">{exp.company}</p>
-                            <p className="text-slate-600 mb-4">{exp.description}</p>
-                            <div className="space-y-2">
-                              <h4 className="font-semibold text-slate-900 text-sm">Réalisations clés :</h4>
-                              <ul className="space-y-1">
-                                {exp.achievements.map((achievement, achIndex) => (
-                                  <li key={achIndex} className="text-slate-600 text-sm flex items-start">
-                                    <span className="text-blue-600 mr-2">•</span>
-                                    {achievement}
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-              </TabsContent>
-
-              <TabsContent value="formation">
-                <div className="space-y-8">
-                  {education.map((edu, index) => (
-                    <Card key={index} className="hover:shadow-lg transition-shadow">
-                      <CardContent className="p-8">
-                        <div className="flex items-start space-x-4">
-                          <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                            <GraduationCap className="w-6 h-6 text-green-600" />
-                          </div>
-                          <div className="flex-1">
-                            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                              <h3 className="text-xl font-bold text-slate-900">{edu.degree}</h3>
-                              <Badge variant="outline">{edu.period}</Badge>
-                            </div>
-                            <p className="text-green-600 font-medium mb-3">{edu.school}</p>
-                            <p className="text-slate-600">{edu.description}</p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-              </TabsContent>
-
-              <TabsContent value="certifications">
-                <div className="grid md:grid-cols-2 gap-6">
-                  {certifications.map((cert, index) => (
-                    <Card key={index} className="hover:shadow-lg transition-shadow">
-                      <CardContent className="p-6">
-                        <div className="flex items-center space-x-4">
-                          <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                            <Award className="w-6 h-6 text-yellow-600" />
-                          </div>
-                          <div>
-                            <h3 className="font-semibold text-slate-900">{cert}</h3>
-                            <p className="text-slate-600 text-sm">Certification professionnelle</p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-              </TabsContent>
-            </Tabs>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Contactez-moi</h2>
-              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Intéressé par mon profil ? N'hésitez pas à me contacter pour discuter de vos projets
-              </p>
+      <section id="contact" className="py-12 md:py-20">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-slate-900 text-center">Contactez-moi</h2>
+          <form
+            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+            onSubmit={(e) => {
+              e.preventDefault();
+              alert("Formulaire soumis !");
+            }}
+          >
+            <div className="flex flex-col">
+              <Label htmlFor="name">Nom</Label>
+              <Input id="name" type="text" required placeholder="Votre nom" />
             </div>
-
-            <div className="grid md:grid-cols-2 gap-12">
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-6">Informations de contact</h3>
-                <div className="space-y-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                      <Mail className="w-6 h-6 text-blue-600" />
-                    </div>
-                    <div>
-                      <p className="font-medium text-slate-900">Email</p>
-                      <p className="text-slate-600">bemazavajulio72002@email.com</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                      <Phone className="w-6 h-6 text-green-600" />
-                    </div>
-                    <div>
-                      <p className="font-medium text-slate-900">Téléphone</p>
-                      <p className="text-slate-600">+261 32 51 517 78</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-purple-600" />
-                    </div>
-                    <div>
-                      <p className="font-medium text-slate-900">Localisation</p>
-                      <p className="text-slate-600">Fianarantsoa, Madagascar</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-8">
-                  <h4 className="font-semibold text-slate-900 mb-4">Suivez-moi</h4>
-                  <div className="flex space-x-4">
-                    <a href="https://github.com/bemazava72002" className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center hover:bg-slate-200 transition-colors">
-                      <Github className="w-5 h-5 text-slate-600" />
-                    </a>
-                    <a href="https://linkedin.com/in/juliobemazava" className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center hover:bg-slate-200 transition-colors">
-                      <Linkedin className="w-5 h-5 text-slate-600" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-6">Envoyez-moi un message</h3>
-                <form className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="name">Nom</Label>
-                      <Input id="name" placeholder="Votre nom" />
-                    </div>
-                    <div>
-                      <Label htmlFor="email">Email</Label>
-                      <Input id="email" type="email" placeholder="votre@email.com" />
-                    </div>
-                  </div>
-                  <div>
-                    <Label htmlFor="subject">Sujet</Label>
-                    <Input id="subject" placeholder="Sujet du message" />
-                  </div>
-                  <div>
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea id="message" placeholder="Votre message..." className="min-h-[120px]" />
-                  </div>
-                  <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
-                    <Send className="w-4 h-4 mr-2" />
-                    Envoyer le message
-                  </Button>
-                </form>
-              </div>
+            <div className="flex flex-col">
+              <Label htmlFor="email">Email</Label>
+              <Input id="email" type="email" required placeholder="Votre email" />
             </div>
+            <div className="sm:col-span-2 flex flex-col">
+              <Label htmlFor="message">Message</Label>
+              <Textarea id="message" rows={6} required placeholder="Votre message" />
+            </div>
+            <div className="sm:col-span-2 flex justify-center">
+              <Button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3">
+                <Send className="w-5 h-5 mr-2" /> Envoyer
+              </Button>
+            </div>
+          </form>
+          <div className="mt-12 text-center space-y-4 text-slate-700">
+            <p className="flex items-center justify-center space-x-2">
+              <Mail className="w-5 h-5" /> <span>julio@example.com</span>
+            </p>
+            <p className="flex items-center justify-center space-x-2">
+              <Phone className="w-5 h-5" /> <span>+261 34 12 345 67</span>
+            </p>
+            <p className="flex items-center justify-center space-x-2">
+              <MapPin className="w-5 h-5" /> <span>Antananarivo, Madagascar</span>
+            </p>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="text-center">
-            <div className="font-bold text-xl mb-4">
-              BEMAZAVA<span className="text-blue-400">.</span>
-            </div>
-            <p className="text-slate-400 mb-6">
-              Développeur Web Full Stack passionné par l'innovation technologique
-            </p>
-            <div className="flex justify-center space-x-6 mb-6">
-              <a href="https://github.com/bemazava72002" className="text-slate-400 hover:text-white transition-colors">
-                <Github className="w-5 h-5" />
-              </a>
-              <a href="https://linkedin.com/in/juliobemazava" className="text-slate-400 hover:text-white transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="mailto:bemazavajulio72002@email.com" className="text-slate-400 hover:text-white transition-colors">
-                <Mail className="w-5 h-5" />
-              </a>
-            </div>
-            <div className="border-t border-slate-800 pt-6">
-              <p className="text-slate-400 text-sm">
-                © 2025 BEMAZAVA Julio. Tous droits réservés.
-              </p>
-            </div>
+      <footer className="bg-slate-800 text-white py-8">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+          <p>© 2025 Julio Bemazava. Tous droits réservés.</p>
+          <div className="flex space-x-6 mt-4 md:mt-0">
+            <a href="#" aria-label="Github" className="hover:text-blue-500">
+              <Github className="w-6 h-6" />
+            </a>
+            <a href="#" aria-label="LinkedIn" className="hover:text-blue-500">
+              <Linkedin className="w-6 h-6" />
+            </a>
+            <a href="mailto:julio@example.com" aria-label="Email" className="hover:text-blue-500">
+              <Mail className="w-6 h-6" />
+            </a>
           </div>
         </div>
       </footer>
