@@ -214,7 +214,7 @@ export default function Portfolio() {
           
             />
               </div>
-              <h1 className="text-4xl md:text-2xl font-bold text-slate-900 mb-4">
+              <h1 className="text-6xl md:text-2xl font-bold text-slate-900 mb-4">
                 BEMAZAVA <span className="text-blue-600">Julio</span>
               </h1>
               <p className="text-xl md:text-2xl text-slate-600 mb-2">
