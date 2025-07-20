@@ -655,7 +655,7 @@ export default function Portfolio() {
                     </div>
                     <div>
                       <p className="font-medium text-slate-900">Email</p>
-                      <p className="text-slate-600 font-auto">bemazavajulio72002@email.com</p>
+                      <p className="text-slate-600 font-sm">bemazavajulio72002@email.com</p>
                     </div>
                   </div>
                   
@@ -696,7 +696,7 @@ export default function Portfolio() {
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-6">Envoyez-moi un message</h3>
                 <form className="space-y-6">
-                  <div className="grid md:grid-cols-4 gap-2">
+                  <div className="grid md:grid-cols-2 gap-2">
                     <div>
                       <Label htmlFor="name">Nom</Label>
                       <Input id="name" placeholder="Votre nom" />
