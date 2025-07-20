@@ -665,7 +665,7 @@ export default function Portfolio() {
                     </div>
                     <div>
                       <p className="font-medium text-slate-900">Téléphone</p>
-                      <p className="text-slate-600 font-medium">+261 32 51 517 78</p>
+                      <p className="text-slate-600 font-small">+261 32 51 517 78</p>
                     </div>
                   </div>
                   
