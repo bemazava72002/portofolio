@@ -670,10 +670,12 @@ export default function Portfolio() {
                     <Label htmlFor="message">Message</Label>
                     <Textarea id="message" placeholder="Your message..." className="min-h-[120px]" />
                   </div>
-                  <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
+                 <a href="mailto:bemazavajulio72002@gmail.com">
+                  <Button  className="w-full bg-blue-600 hover:bg-blue-700">
                     <Send className="w-4 h-4 mr-2" />
                     Send the message
                   </Button>
+                  </a> 
                 </form>
               </div>
             </div>
