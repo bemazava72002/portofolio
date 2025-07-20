@@ -457,7 +457,7 @@ export default function Portfolio() {
                 <Card key={index} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
                   <div className="relative overflow-hidden">
                     <img 
-                      src={project.image} 
+                      src={} 
                       alt={project.title}
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
