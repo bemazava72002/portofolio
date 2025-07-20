@@ -207,11 +207,11 @@ export default function Portfolio() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
-              <div className="w-31 h-31 mx-auto mb-6 rounded-full flex items-center justify-center">
+              <div className="w-30 h-30 mx-auto mb-6 rounded-full flex items-center justify-center">
                 <img 
           src="./bmz.jpg" 
          
-          className="rounded-full"
+          className="w-full h-full object-cover"
             />
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-4">
