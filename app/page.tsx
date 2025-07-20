@@ -211,7 +211,7 @@ export default function Portfolio() {
                 <img 
           src="./bmz.jpg" 
          
-          className="w-full h-full object-cover"
+          
             />
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-4">
