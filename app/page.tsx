@@ -209,9 +209,7 @@ export default function Portfolio() {
             <div className="mb-8">
               <div className="w-32 h-32 mx-auto mb-6 rounded-full flex items-center justify-center">
                 <img 
-          src="./bmz.jpg" 
-         
-          className="w-full h-full object-cover"
+          src="./bmz.jpg" className='w-32 h-32 mx-auto mb-6 rounded-full flex items-center justify-center'
             />
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-4">
