@@ -207,7 +207,7 @@ export default function Portfolio() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
-              <div className="w-32 h-30 border-3 from-blue to-purple mx-auto mb-6 rounded-full flex items-center justify-center">
+              <div className="w-30 h-30 border-3 from-blue to-purple mx-auto mb-6 rounded-full flex items-center justify-center">
                 <img 
           src="./bmz.jpg" 
          
