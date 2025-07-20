@@ -176,7 +176,7 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 md:overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 overflow-x-hidden">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div className="container mx-auto px-4">
@@ -645,7 +645,7 @@ export default function Portfolio() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-4 gap-12">
+            <div className="grid md:grid-cols-2 gap-12">
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-6">Informations de contact</h3>
                 <div className="space-y-6">
@@ -655,7 +655,7 @@ export default function Portfolio() {
                     </div>
                     <div>
                       <p className="font-medium text-slate-900">Email</p>
-                      <p className="text-slate-600">bemazavajulio72002@gmail.com</p>
+                      <p className="text-slate-600">bemazavajulio72002@email.com</p>
                     </div>
                   </div>
                   
@@ -696,7 +696,7 @@ export default function Portfolio() {
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-6">Envoyez-moi un message</h3>
                 <form className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-2">
+                  <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="name">Nom</Label>
                       <Input id="name" placeholder="Votre nom" />
