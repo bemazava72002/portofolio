@@ -727,7 +727,7 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="bg-slate-900 text-white py-12">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-auto">
           <div className="text-center">
             <div className="font-bold text-xl mb-4">
               BEMAZAVA<span className="text-blue-400">.</span>
