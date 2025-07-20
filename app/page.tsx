@@ -137,7 +137,7 @@ export default function Portfolio() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <div className="font-bold text-lg text-slate-900">
+            <div className="font-bold text-xl text-slate-900">
               BEMAZAVA<span className="text-blue-600">.</span>
             </div>
             
@@ -207,14 +207,14 @@ export default function Portfolio() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
-              <div className="w-32 h-32relative mx-auto mb-6 rounded-full flex items-center justify-center">
+              <div className="w-32 h-32 mx-auto mb-6 rounded-full flex items-center justify-center">
                 <img 
           src="./bmz.jpg" 
          className='w-32 h-32 mx-auto mb-6 rounded-full flex items-center justify-center'
           
             />
               </div>
-              <h1 className="text-6xl md:text-2xl font-bold text-slate-900 mb-4">
+              <h1 className="text-6xl md:text-3xl font-bold text-slate-900 mb-4">
                 BEMAZAVA <span className="text-blue-600">Julio</span>
               </h1>
               <p className="text-xl md:text-2xl text-slate-600 mb-2">
