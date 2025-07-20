@@ -208,7 +208,7 @@ export default function Portfolio() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                <img src="https://www.mediafire.com/view/usvga7owmsc9xw6/bmz.jpg/file" />
+                <img src="https://www.mediafire.com/view/j7qmn2so46qrn2q/bmz.jpg/file" />
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-4">
                 BEMAZAVA <span className="text-blue-600">Julio</span>
