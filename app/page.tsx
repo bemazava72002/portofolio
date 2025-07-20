@@ -53,104 +53,61 @@ export default function Portfolio() {
   ];
 
   const projects = [
-    {
-      title: "E-Commerce Platform",
-      description: "Plateforme e-commerce complète avec gestion des paiements, authentification utilisateur et tableau de bord admin.",
-      technologies: ["Next.js", "Node.js", "PostgreSQL", "JWT", "Stripe"],
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
-      github: "https://github.com/bemazava",
-      demo: "https://demo.com",
-      category: "Fullstack"
-    },
+   
     {
       title: "Task Management",
-      description: "API REST robuste pour la gestion de projets avec authentification JWT et documentation Swagger.",
+      description: "Robust REST API for project management with JWT authentication and Swagger documentation.",
       technologies: ["Django","Next.js", "PostgreSQL", "JWT", "Swagger"],
       image: "https://images.pexels.com/photos/5439379/pexels-photo-5439379.jpeg?auto=compress&cs=tinysrgb&w=800",
       github: "https://github.com/bemazava72002/task-management/",
       demo: "https://demo.com",
-      category: "Backend"
+      category: "FullStack"
     },
-    {
-      title: "Real-time Chat App",
-      description: "Application de chat en temps réel avec notifications push et partage de fichiers.",
-      technologies: ["React.js", "Socket.io", "Node.js", "MongoDB"],
-      image: "https://images.pexels.com/photos/1576937/pexels-photo-1576937.jpeg?auto=compress&cs=tinysrgb&w=800",
-      github: "https://github.com/bemazava72002",
-      demo: "https://demo.com",
-      category: "Frontend"
-    },
-    {
-      title: "Analytics Dashboard",
-      description: "Tableau de bord d'analyse avec visualisations interactives et rapports automatisés.",
-      technologies: ["Django", "React.js", "Chart.js", "Redis"],
-      image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800",
-      github: "https://github.com/bemazava72002",
-      demo: "https://demo.com",
-      category: "Fullstack"
-    }
+   
+    
   ];
 
   const experiences = [
+    
+    
     {
-      title: "Développeur Full Stack Senior",
-      company: "TechCorp Solutions",
-      period: "2022 - Présent",
-      description: "Développement d'applications web complexes avec Next.js et Node.js, encadrement d'équipe junior.",
-      achievements: [
-        "Amélioration des performances de 40% sur les applications principales",
-        "Mise en place de l'architecture microservices",
-        "Formation de 5 développeurs juniors"
-      ]
-    },
-    {
-      title: "Développeur Full Stack",
-      company: "Digital Innovation Lab",
-      period: "2020 - 2022",
-      description: "Conception et développement d'applications web avec React.js, Django et Spring Boot.",
-      achievements: [
-        "Développement de 12 applications web complètes",
-        "Réduction du temps de développement de 30%",
-        "Intégration d'APIs tierces complexes"
-      ]
-    },
-    {
-      title: "Développeur FullStack",
-      company: "Pôle d'Anti-Corruption de Madagascar",
+      title: "FullStack Developer",
+      company: "Madagascar Anti-Corruption Center",
       period: "2024-2025",
-      description: "Conception et réalisation d'une application de gestion des rapports juridiques",
+      description: "Design and development of a legal report management application",
       achievements: [
-        "Création d'un APIs REST robuste",
-        "Optimisation des requêtes base de données",
-        "Faire le teste de l'application"
+        "Creating a robust REST API",
+        "Creating an interactive and responsive front-end",
+        "Optimizing database queries",
+        "Test the application"
       ]
     }
   ];
 
   const education = [
     {
-      degree: "Master en Informatique",
+      degree: "Master's in Computer Science",
       school: "École Nationale d'Informatique",
       period: "2024 - 2025",
-      description: "Spécialisation en développement web et génie logiciel"
+      description: "Specialization in web development and software engineering"
     },
     {
-      degree: "Licence en Informatique",
+      degree: "Bachelor's Degree in Computer Science",
       school: "Ecole National d'Informatique",
       period: "2023 - 2024",
-      description: "Ecole Nationale d'Informatique"
+      description: "Specialization in web development and software engineering"
     }
   ];
 
   const certifications = [
-    "Cybersecurité",
+    "Cybersecurity",
     "Data Analyst",
    
   ];
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['accueil', 'a-propos', 'competences', 'projets', 'experience', 'contact'];
+      const sections = ['home', 'about', 'skills', 'projects', 'experience', 'contact'];
       const scrollY = window.scrollY;
       
       sections.forEach(section => {
@@ -206,7 +163,7 @@ export default function Portfolio() {
                 className="hidden md:flex items-center space-x-2"
               >
                 <Download className="w-4 h-4" />
-                <span>CV</span>
+                <span>resume CV</span>
               </Button>
               
               <Button 
@@ -237,7 +194,7 @@ export default function Portfolio() {
                 ))}
                 <a href="#"><Button variant="outline" size="sm" className="w-fit">
                   <Download className="w-4 h-4 mr-2" />
-                  Télécharger CV
+                  Download CV
                 </Button>
                 </a>
               </div>
@@ -258,11 +215,11 @@ export default function Portfolio() {
                 BEMAZAVA <span className="text-blue-600">Julio</span>
               </h1>
               <p className="text-xl md:text-2xl text-slate-600 mb-2">
-                Développeur Web Full Stack
+                Full Stack Web Developer
               </p>
               <p className="text-lg text-slate-500 max-w-2xl mx-auto">
-                Passionné par la création d'applications web modernes et performantes avec 
-                Node.js, React.js,Next.js, Django, Spring Boot
+                Passionate about building modern and high-performance 
+                web applications with Node.js, React.js, Next.js, Django, Spring Boot
               </p>
             </div>
             
@@ -272,14 +229,14 @@ export default function Portfolio() {
                 onClick={() => scrollToSection('projets')}
                 className="bg-blue-600 hover:bg-blue-700"
               >
-                Voir mes projets
+                Get in touch my project
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
                 onClick={() => scrollToSection('contact')}
               >
-                Me contacter
+                Contact me
               </Button>
             </div>
 
@@ -303,33 +260,33 @@ export default function Portfolio() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">À propos de moi</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">About me</h2>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Développeur full stack avec plus de 3 ans d'expérience dans la création d'applications web innovantes
+               Full stack developer with over 3 years of experience building innovative web applications
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-slate-600 mb-6 leading-relaxed">
-                  Passionné par le développement web depuis mes débuts, j'ai acquis une expertise solide 
-                  dans les technologies modernes tant côté frontend que backend. Mon approche consiste à 
-                  créer des solutions élégantes et performantes qui répondent aux besoins spécifiques de chaque projet.
+                 Passionate about web development since I started, I have acquired solid expertise
+                  in modern technologies on both the frontend and backend. 
+                  My approach is to create elegant and powerful solutions that meet the specific needs of each project.
                 </p>
                 <p className="text-slate-600 mb-6 leading-relaxed">
-                  Je maîtrise parfaitement l'écosystème JavaScript/TypeScript avec Node.js, React.js et Next.js, 
-                  ainsi que les frameworks Java Spring Boot et Spring MVC, et Python Django. Cette polyvalence 
-                  me permet d'adapter mes solutions aux contraintes techniques et aux préférences de chaque équipe.
+                 I'm highly proficient in the JavaScript/TypeScript ecosystem with Node.js, React.js, 
+                 and Next.js, as well as the Java frameworks Spring Boot and Spring MVC, and Python Django. 
+                 This versatility allows me to adapt my solutions to the technical constraints and preferences of each team.
                 </p>
                 
                 <div className="grid grid-cols-2 gap-4 mt-8">
                   <div className="text-center p-4 bg-blue-50 rounded-lg">
-                    <div className="text-2xl font-bold text-blue-600">3+</div>
-                    <div className="text-sm text-slate-600">Années d'expérience</div>
+                    <div className="text-2xl font-bold text-blue-600">4+</div>
+                    <div className="text-sm text-slate-600">Years of experience</div>
                   </div>
                   <div className="text-center p-4 bg-green-50 rounded-lg">
                     <div className="text-2xl font-bold text-green-600">10+</div>
-                    <div className="text-sm text-slate-600">Projets réalisés</div>
+                    <div className="text-sm text-slate-600">Completed projects</div>
                   </div>
                 </div>
               </div>
@@ -343,7 +300,7 @@ export default function Portfolio() {
                       </div>
                       <div>
                         <h3 className="font-semibold text-slate-900">Frontend</h3>
-                        <p className="text-slate-600 text-sm">Interfaces utilisateur modernes</p>
+                        <p className="text-slate-600 text-sm">Modern user interfaces</p>
                       </div>
                     </div>
                     <p className="text-slate-600 text-sm">
@@ -360,7 +317,7 @@ export default function Portfolio() {
                       </div>
                       <div>
                         <h3 className="font-semibold text-slate-900">Backend</h3>
-                        <p className="text-slate-600 text-sm">APIs robustes et sécurisées</p>
+                        <p className="text-slate-600 text-sm">Robust and secure APIs</p>
                       </div>
                     </div>
                     <p className="text-slate-600 text-sm">
@@ -377,7 +334,7 @@ export default function Portfolio() {
                       </div>
                       <div>
                         <h3 className="font-semibold text-slate-900">Database</h3>
-                        <p className="text-slate-600 text-sm">Gestion de données efficace</p>
+                        <p className="text-slate-600 text-sm">Efficient data management</p>
                       </div>
                     </div>
                     <p className="text-slate-600 text-sm">
@@ -396,9 +353,9 @@ export default function Portfolio() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Compétences techniques</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Technical skills</h2>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Maîtrise des technologies modernes pour créer des solutions web performantes
+                Mastery of modern technologies to create high-performance web solutions
               </p>
             </div>
 
@@ -427,7 +384,7 @@ export default function Portfolio() {
                         </div>
                         <div className="space-y-2">
                           <div className="flex justify-between text-sm">
-                            <span className="text-slate-600">Maîtrise</span>
+                            <span className="text-slate-600">Mastery</span>
                             <span className="text-slate-900 font-medium">{skill.level}%</span>
                           </div>
                           <div className="w-full bg-slate-200 rounded-full h-2">
@@ -481,14 +438,14 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Projects Section */}
+      
       <section id="projets" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Mes projets</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">My projects</h2>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Découvrez quelques-uns de mes projets récents qui démontrent mes compétences techniques
+               Check out some of my recent projects that showcase my technical skills
               </p>
             </div>
 
@@ -538,16 +495,16 @@ export default function Portfolio() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Expérience & Formation</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Experience & Eduction</h2>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Mon parcours professionnel et académique dans le développement web
+                My professional and academic background in web development
               </p>
             </div>
 
             <Tabs defaultValue="experience" className="w-full">
               <TabsList className="grid w-full grid-cols-3 mb-12">
                 <TabsTrigger value="experience">Expérience</TabsTrigger>
-                <TabsTrigger value="formation">Formation</TabsTrigger>
+                <TabsTrigger value="formation">Education</TabsTrigger>
                 <TabsTrigger value="certifications">Certifications</TabsTrigger>
               </TabsList>
 
@@ -568,7 +525,7 @@ export default function Portfolio() {
                             <p className="text-blue-600 font-medium mb-3">{exp.company}</p>
                             <p className="text-slate-600 mb-4">{exp.description}</p>
                             <div className="space-y-2">
-                              <h4 className="font-semibold text-slate-900 text-sm">Réalisations clés :</h4>
+                              <h4 className="font-semibold text-slate-900 text-sm">Key achievements:</h4>
                               <ul className="space-y-1">
                                 {exp.achievements.map((achievement, achIndex) => (
                                   <li key={achIndex} className="text-slate-600 text-sm flex items-start">
@@ -586,7 +543,7 @@ export default function Portfolio() {
                 </div>
               </TabsContent>
 
-              <TabsContent value="formation">
+              <TabsContent value="Training">
                 <div className="space-y-8">
                   {education.map((edu, index) => (
                     <Card key={index} className="hover:shadow-lg transition-shadow">
@@ -621,7 +578,7 @@ export default function Portfolio() {
                           </div>
                           <div>
                             <h3 className="font-semibold text-slate-900">{cert}</h3>
-                            <p className="text-slate-600 text-sm">Certification professionnelle</p>
+                            <p className="text-slate-600 text-sm">Certifications</p>
                           </div>
                         </div>
                       </CardContent>
@@ -639,22 +596,22 @@ export default function Portfolio() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Contactez-moi</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Contact me</h2>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Intéressé par mon profil ? N'hésitez pas à me contacter pour discuter de vos projets
+               Interested in my profile? Don't hesitate to contact me to discuss your projects.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-6">Informations de contact</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-6">Contact Information</h3>
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                       <Mail className="w-6 h-6 text-blue-600" />
                     </div>
                     <div>
-                      <p className="font-medium text-slate-900">Email</p>
+                      <p className="font-medium text-slate-900">E-mail</p>
                       <p className="text-slate-600 text-sm">bemazavajulio72002@email.com</p>
                     </div>
                   </div>
@@ -664,7 +621,7 @@ export default function Portfolio() {
                       <Phone className="w-6 h-6 text-green-600" />
                     </div>
                     <div>
-                      <p className="font-medium text-slate-900">Téléphone</p>
+                      <p className="font-medium text-slate-900">Phone</p>
                       <p className="text-slate-600 text-sm">+261 32 51 517 78</p>
                     </div>
                   </div>
@@ -674,14 +631,14 @@ export default function Portfolio() {
                       <MapPin className="w-6 h-6 text-purple-600" />
                     </div>
                     <div>
-                      <p className="font-medium text-slate-900 ">Localisation</p>
+                      <p className="font-medium text-slate-900 ">Location</p>
                       <p className="text-slate-600 text-sm">Fianarantsoa, Madagascar</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="mt-8">
-                  <h4 className="font-semibold text-slate-900 mb-4">Suivez-moi</h4>
+                  <h4 className="font-semibold text-slate-900 mb-4">Follow me</h4>
                   <div className="flex space-x-4">
                     <a href="https://github.com/bemazava72002" className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center hover:bg-slate-200 transition-colors">
                       <Github className="w-5 h-5 text-slate-600" />
@@ -694,29 +651,29 @@ export default function Portfolio() {
               </div>
 
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-6">Envoyez-moi un message</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-6">Send me a message</h3>
                 <form className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <Label htmlFor="name">Nom</Label>
-                      <Input id="name" placeholder="Votre nom" />
+                      <Label htmlFor="name">Name</Label>
+                      <Input id="name" placeholder="Your name" />
                     </div>
                     <div>
-                      <Label htmlFor="email">Email</Label>
-                      <Input id="email" type="email" placeholder="votre@email.com" />
+                      <Label htmlFor="email">E-mail</Label>
+                      <Input id="email" type="email" placeholder="youre@email.com" />
                     </div>
                   </div>
                   <div>
-                    <Label htmlFor="subject">Sujet</Label>
-                    <Input id="subject" placeholder="Sujet du message" />
+                    <Label htmlFor="subject">Subject</Label>
+                    <Input id="subject" placeholder="Subject of the message" />
                   </div>
                   <div>
                     <Label htmlFor="message">Message</Label>
-                    <Textarea id="message" placeholder="Votre message..." className="min-h-[120px]" />
+                    <Textarea id="message" placeholder="Your message..." className="min-h-[120px]" />
                   </div>
                   <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
                     <Send className="w-4 h-4 mr-2" />
-                    Envoyer le message
+                    Send the message
                   </Button>
                 </form>
               </div>
@@ -733,7 +690,7 @@ export default function Portfolio() {
               BEMAZAVA<span className="text-blue-400">.</span>
             </div>
             <p className="text-slate-400 mb-6">
-              Développeur Web Full Stack passionné par l'innovation technologique
+              Full Stack Web Developer passionate about technological innovation
             </p>
             <div className="flex justify-center space-x-6 mb-6">
               <a href="https://github.com/bemazava72002" className="text-slate-400 hover:text-white transition-colors">
@@ -748,7 +705,7 @@ export default function Portfolio() {
             </div>
             <div className="border-t border-slate-800 pt-6">
               <p className="text-slate-400 text-sm">
-                © 2025 BEMAZAVA Julio. Tous droits réservés.
+                2025 BEMAZAVA Julio. All rights reserved.
               </p>
             </div>
           </div>
