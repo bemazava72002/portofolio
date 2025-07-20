@@ -417,7 +417,7 @@ export default function Portfolio() {
                           </div>
                           <div className="space-y-2">
                             <div className="flex justify-between text-sm">
-                              <span className="text-slate-600">Maîtrise</span>
+                              <span className="text-slate-600">Mastery</span>
                               <span className="text-slate-900 font-medium">{skill.level}%</span>
                             </div>
                             <div className="w-full bg-slate-200 rounded-full h-2">
