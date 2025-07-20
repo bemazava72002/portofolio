@@ -176,7 +176,7 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 md:overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 md:overflow-x-hidden font-medium">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div className="container mx-auto px-4">
