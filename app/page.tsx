@@ -22,7 +22,7 @@ import {
   Globe,
   Download,
   Send,
-  User,
+  
   Briefcase,
   GraduationCap,
   Award,
@@ -341,7 +341,7 @@ export default function Portfolio() {
                       </div>
                     </div>
                     <p className="text-slate-600 text-sm">
-                      PostgreSQL, MongoDB, Redis, MySQL
+                      PostgreSQL, MongoDB, MySQL
                     </p>
                   </CardContent>
                 </Card>
