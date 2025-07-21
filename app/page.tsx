@@ -215,9 +215,9 @@ export default function Portfolio() {
             />
               </div>
               <h1 className="text-6xl md:text-3xl font-bold text-slate-900 mb-4">
-                BEMAZAVA <span className="text-blue-600">Julio</span>
+                BEMAZAVA <span className="text-blue-600">JULIO</span>
               </h1>
-              <p className="text-xl md:text-2xl text-slate-600 mb-2">
+              <p className="text-xl md:text-2xl font-bold text-slate-600 mb-2">
                 Full Stack Web Developer
               </p>
               <p className="text-lg text-slate-500 max-w-2xl mx-auto">
