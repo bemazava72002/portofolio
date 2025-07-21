@@ -62,7 +62,7 @@ export default function Portfolio() {
       image: "./legal_ia.jpg",
       github: "https://github.com/bemazava72002/LegalAI_front.git",
       demo: "https://legal-ai-front.vercel.app/",
-      category: "FullStack"
+      category: "Frontend"
     },
    
     
