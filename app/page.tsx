@@ -143,7 +143,7 @@ export default function Portfolio() {
               BEMAZAVA<span className="text-blue-600">.</span>
             </div>
             
-            <nav className="hidden md:flex space-x-8">
+            <nav className="hidden right md:flex space-x-8">
               {['home', 'about', 'skills', 'projects', 'experience', 'contact'].map((item) => (
                 <button
                   key={item}
