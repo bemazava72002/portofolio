@@ -53,13 +53,15 @@ export default function Portfolio() {
 
   const projects = [
    
-    {
-      title: "Task Management",
-      description: "Robust REST API for project management with JWT authentication and Swagger documentation.",
-      technologies: ["Django","Next.js", "PostgreSQL", "Swagger"],
-      image: "tesy",
-      github: "https://github.com/bemazava72002/task-management/",
-      demo: "https://demo.com",
+  
+
+     {
+      title: "LegalAI Frontend",
+      description: "",
+      technologies: ["Next.js", "Tailwindcss","Typescript"],
+      image: "./legal_ia.jpg",
+      github: "https://github.com/bemazava72002/LegalAI_front.git",
+      demo: "https://legal-ai-front.vercel.app/",
       category: "FullStack"
     },
    
