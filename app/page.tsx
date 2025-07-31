@@ -60,7 +60,7 @@ export default function Portfolio() {
       description: "",
       technologies: ["Next.js", "Tailwindcss","Typescript"],
       image: "./legal_ia.jpg",
-      github: "https://github.com/bemazava72002/LegalAI_front.git",
+      
       demo: "https://legal-ai-front.vercel.app/",
       category: "Frontend"
     },
@@ -478,13 +478,6 @@ export default function Portfolio() {
                     </div>
                     
                     <div className="flex space-x-4">
-
-                      <a href={project.github}>
-                      <Button variant="outline" size="sm" className="flex items-center space-x-2">
-                        <Github className="w-4 h-4" />
-                        <span>Code</span>
-                      </Button>
-                      </a>
 
                       <a href={project.demo}>
                       <Button size="sm" className="flex items-center space-x-2">
