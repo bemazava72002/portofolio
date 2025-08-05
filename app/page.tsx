@@ -36,19 +36,19 @@ export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("home");
 
   const skills = [
-    { name: "Node.js", category: "Backend", level: 70, icon: <Server className="w-5 h-5" /> },
-    { name: "React.js", category: "Frontend", level: 65, icon: <Code className="w-5 h-5" /> },
-    { name: "Next.js", category: "Fullstack", level: 60, icon: <Globe className="w-5 h-5" /> },
-    { name: "Django", category: "Backend", level: 80, icon: <Database className="w-5 h-5" /> },
-    { name: "Spring Boot", category: "Backend", level: 62, icon: <Server className="w-5 h-5" /> },
-    { name: "JavaScript", category: "Language", level: 75, icon: <Code className="w-5 h-5" /> },
-    { name: "TypeScript", category: "Language", level: 61, icon: <Code className="w-5 h-5" /> },
-    { name: "Python", category: "Language", level: 85, icon: <Code className="w-5 h-5" /> },
-    { name: "Java", category: "Language", level: 73, icon: <Code className="w-5 h-5" /> },
-    { name: "PostgreSQL", category: "Database", level: 67, icon: <Database className="w-5 h-5" /> },
-    { name: "MySQL", category: "Database", level: 87, icon: <Database className="w-5 h-5" /> },
+    { name: "Node.js", category: "Backend", level: 60, icon:<img src="https://img.icons8.com/?size=100&id=FQlr_bFSqEdG&format=png&color=000000"  />},
+    { name: "React.js", category: "Frontend", level: 65, icon: <img src="https://img.icons8.com/?size=100&id=hCgWxZnDjiIJ&format=png&color=000000" />  },
+    { name: "Next.js", category: "Fullstack", level: 60, icon: <img src="https://img.icons8.com/?size=100&id=r2OarXWQc7B6&format=png&color=000000" /> },
+    { name: "Django", category: "Backend", level: 80, icon: <img src="https://img.icons8.com/?size=100&id=37o3DqV429ra&format=png&color=000000" alt="" /> },
+   
+    { name: "JavaScript", category: "Language", level: 75, icon: <img src="https://img.icons8.com/?size=100&id=39854&format=png&color=000000" alt="" /> },
+    { name: "TypeScript", category: "Language", level: 59, icon: <img src="https://img.icons8.com/?size=100&id=cHBUT9SmrD2V&format=png&color=000000" alt="" /> },
+    { name: "Python", category: "Language", level: 85, icon: <img src="https://img.icons8.com/?size=100&id=12592&format=png&color=000000" alt="" /> },
+    { name: "Java", category: "Language", level: 73, icon: <img src="https://img.icons8.com/?size=100&id=nws8ugAus82f&format=png&color=000000" alt="" /> },
+    { name: "PostgreSQL", category: "Database", level: 67, icon: <img src="https://img.icons8.com/?size=100&id=36440&format=png&color=000000" alt="" /> },
+    { name: "MySQL", category: "Database", level: 87, icon: <img src="https://img.icons8.com/?size=100&id=f34HG4w9RjQk&format=png&color=000000" alt="" /> },
     
-    { name: "MongoDB", category: "Database", level: 64, icon: <Database className="w-5 h-5" /> },
+    { name: "MongoDB", category: "Database", level: 64, icon: <img src="https://img.icons8.com/?size=100&id=Y9VdL7V5XPIc&format=png&color=000000" alt="" /> },
   ];
 
   const projects = [
@@ -139,8 +139,8 @@ export default function Portfolio() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <div className="font-bold text-xl text-slate-900">
-              BEMAZAVA<span className="text-blue-600">.</span>
+            <div className=" relative font-bold text-xl w-10 h-10 text-black items-center">
+              B<span className="text-black">J</span>
             </div>
             
             <nav className="hidden right md:flex space-x-8">
@@ -149,7 +149,7 @@ export default function Portfolio() {
                   key={item}
                   onClick={() => scrollToSection(item)}
                   className={`text-sm font-medium transition-colors capitalize ${
-                    activeSection === item ? 'text-blue-600' : 'text-slate-600 hover:text-blue-600'
+                    activeSection === item ? 'text-gray-600' : 'text-gray-800'
                   }`}
                 >
                   {item.replace('-', ' ')}
@@ -217,7 +217,7 @@ export default function Portfolio() {
             />
               </div>
               <h1 className="text-6xl md:text-3xl font-bold text-slate-900 mb-4">
-                BEMAZAVA <span className="text-blue-600">JULIO</span>
+                Bemazava <span className="text-black">Julio</span>
               </h1>
               <p className="text-xl md:text-2xl font-bold text-slate-600 mb-2">
                 Full Stack Web Developer
@@ -232,7 +232,7 @@ export default function Portfolio() {
               <Button 
                 size="lg" 
                 onClick={() => scrollToSection('projects')}
-                className="bg-blue-600 hover:bg-blue-700"
+                className="bg-black"
               >
                 Get in touch my project
               </Button>
@@ -285,13 +285,13 @@ export default function Portfolio() {
                 </p>
                 
                 <div className="grid grid-cols-2 gap-4 mt-8">
-                  <div className="text-center p-4 bg-blue-50 rounded-lg">
-                    <div className="text-2xl font-bold text-blue-600">4+</div>
-                    <div className="text-sm text-slate-600">Years of experience</div>
+                  <div className="text-center p-4 bg-black rounded-lg">
+                    <div className="text-2xl font-bold text-white">4+</div>
+                    <div className="text-sm text-white">Years of experience</div>
                   </div>
-                  <div className="text-center p-4 bg-green-50 rounded-lg">
-                    <div className="text-2xl font-bold text-green-600">10+</div>
-                    <div className="text-sm text-slate-600">Completed projects</div>
+                  <div className="text-center p-4 bg-black rounded-lg">
+                    <div className="text-2xl font-bold text-white">10+</div>
+                    <div className="text-sm text-white">Completed projects</div>
                   </div>
                 </div>
               </div>
@@ -300,8 +300,8 @@ export default function Portfolio() {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex items-center space-x-4 mb-4">
-                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                        <Code className="w-6 h-6 text-blue-600" />
+                      <div className="w-12 h-12  rounded-lg flex items-center justify-center">
+                        
                       </div>
                       <div>
                         <h3 className="font-semibold text-slate-900">Frontend</h3>
@@ -317,8 +317,8 @@ export default function Portfolio() {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex items-center space-x-4 mb-4">
-                      <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                        <Server className="w-6 h-6 text-green-600" />
+                      <div className="w-12 h-12  rounded-lg flex items-center justify-center">
+                        <Server className="w-6 h-6 text-black" />
                       </div>
                       <div>
                         <h3 className="font-semibold text-slate-900">Backend</h3>
@@ -334,8 +334,8 @@ export default function Portfolio() {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex items-center space-x-4 mb-4">
-                      <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                        <Database className="w-6 h-6 text-purple-600" />
+                      <div className="w-12 h-12  rounded-lg flex items-center justify-center">
+                        <Database className="w-6 h-6 text-black" />
                       </div>
                       <div>
                         <h3 className="font-semibold text-slate-900">Database</h3>
@@ -379,7 +379,7 @@ export default function Portfolio() {
                     <Card key={index} className="hover:shadow-lg transition-shadow">
                       <CardContent className="p-6">
                         <div className="flex items-center space-x-3 mb-4">
-                          <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                          <div className="w-10 h-10  rounded-full relative flex items-center justify-center">
                             {skill.icon}
                           </div>
                           <div>
@@ -394,7 +394,7 @@ export default function Portfolio() {
                           </div>
                           <div className="w-full bg-slate-200 rounded-full h-2">
                             <div 
-                              className="bg-blue-600 h-2 rounded-full transition-all duration-1000"
+                              className="bg-black h-2 rounded-full transition-all duration-1000"
                               style={{ width: `${skill.level}%` }}
                             />
                           </div>
@@ -412,7 +412,7 @@ export default function Portfolio() {
                       <Card key={index} className="hover:shadow-lg transition-shadow">
                         <CardContent className="p-6">
                           <div className="flex items-center space-x-3 mb-4">
-                            <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <div className="w-10 h-10 rounded-lg flex items-center justify-center">
                               {skill.icon}
                             </div>
                             <div>
@@ -425,9 +425,9 @@ export default function Portfolio() {
                               <span className="text-slate-600">Mastery</span>
                               <span className="text-slate-900 font-medium">{skill.level}%</span>
                             </div>
-                            <div className="w-full bg-slate-200 rounded-full h-2">
+                            <div className="w-full rounded-full h-2">
                               <div 
-                                className="bg-blue-600 h-2 rounded-full transition-all duration-1000"
+                                className="bg-black h-2 rounded-full transition-all duration-1000"
                                 style={{ width: `${skill.level}%` }}
                               />
                             </div>
@@ -464,7 +464,7 @@ export default function Portfolio() {
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-4 right-4">
-                      <Badge className="bg-blue-600">{project.category}</Badge>
+                      <Badge className="bg-black">{project.category}</Badge>
                     </div>
                   </div>
                   <CardContent className="p-6">
@@ -519,14 +519,14 @@ export default function Portfolio() {
                       <CardContent className="p-8">
                         <div className="flex items-start space-x-4">
                           <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                            <Briefcase className="w-6 h-6 text-blue-600" />
+                            <img src="./images.jpg" alt="" />
                           </div>
                           <div className="flex-1">
                             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                               <h3 className="text-xl font-bold text-slate-900">{exp.title}</h3>
                               <Badge variant="outline">{exp.period}</Badge>
                             </div>
-                            <p className="text-blue-600 font-medium mb-3">{exp.company}</p>
+                            <p className="text-slate-600 font-medium mb-3">{exp.company}</p>
                             <p className="text-slate-600 mb-4">{exp.description}</p>
                             <div className="space-y-2">
                               <h4 className="font-semibold text-slate-900 text-sm">Key achievements:</h4>
