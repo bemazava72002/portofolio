@@ -279,7 +279,7 @@ export default function Portfolio() {
                 </p>
                 <p className="text-slate-600 mb-6 leading-relaxed">
                 Along the way, I’ve developed and maintained production-level features using JavaScript/TypeScript (Node.js, React.js, Next.js), Java (Spring Boot, Spring MVC), and Python (Django). 
-                I’ve contributed to improving code structure, speeding up delivery, and enhancing the overall experience for both users and developers.
+                I’ve contributed to improving code structure, and enhancing the overall experience for both users and developers.
                 Being adaptable and comfortable with different tech stacks has allowed me to integrate easily into teams and align with their goals and workflows.
                 </p>
                 
