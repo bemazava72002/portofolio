@@ -675,7 +675,7 @@ export default function Portfolio() {
                     <Textarea id="message" placeholder="Your message..." className="min-h-[120px]" />
                   </div>
                  <a href="mailto:bemazavajulio72002@gmail.com">
-                  <Button  className="w-full bg-blue-600 hover:bg-blue-700">
+                  <Button  className="w-full bg-black hover:bg-blue-700">
                     <Send className="w-4 h-4 mr-2" />
                     Send the message
                   </Button>
