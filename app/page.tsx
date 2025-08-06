@@ -274,14 +274,13 @@ export default function Portfolio() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-slate-600 mb-6 leading-relaxed">
-                 Passionate about web development since I started, I have acquired solid expertise
-                  in modern technologies on both the frontend and backend. 
-                  My approach is to create elegant and powerful solutions that meet the specific needs of each project.
+                I’ve been deeply involved in web development from the start of my career, 
+                working on full-stack projects where I focused on building clean, scalable, and user-friendly applications.
                 </p>
                 <p className="text-slate-600 mb-6 leading-relaxed">
-                 I'm highly proficient in the JavaScript/TypeScript ecosystem with Node.js, React.js, 
-                 and Next.js, as well as the Java frameworks Spring Boot and Spring MVC, and Python Django. 
-                 This versatility allows me to adapt my solutions to the technical constraints and preferences of each team.
+                Along the way, I’ve developed and maintained production-level features using JavaScript/TypeScript (Node.js, React.js, Next.js), Java (Spring Boot, Spring MVC), and Python (Django). 
+                I’ve contributed to improving code structure, speeding up delivery, and enhancing the overall experience for both users and developers.
+                Being adaptable and comfortable with different tech stacks has allowed me to integrate easily into teams and align with their goals and workflows.
                 </p>
                 
                 <div className="grid grid-cols-2 gap-4 mt-8">
