@@ -692,7 +692,7 @@ export default function Portfolio() {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="font-bold text-xl mb-4">
-              BEMAZAVA<span className="text-blue-400">.</span>
+              Bemazava Julio<span className="text-blue-400">.</span>
             </div>
             <p className="text-slate-400 mb-6">
               Full Stack Web Developer passionate about technological innovation
@@ -710,7 +710,7 @@ export default function Portfolio() {
             </div>
             <div className="border-t border-slate-800 pt-6">
               <p className="text-slate-400 text-sm">
-                2025 BEMAZAVA Julio. All rights reserved.
+                2025 Bemazava Julio. All rights reserved.
               </p>
             </div>
           </div>
