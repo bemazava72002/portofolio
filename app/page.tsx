@@ -139,8 +139,8 @@ export default function Portfolio() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <div className=" relative font-bold text-xl w-10 h-10 text-black items-center">
-              B<span className="text-black">J</span>
+            <div className=" relative font-bold text-xl w-10 h-10 text-slate-900 items-center">
+              B<span className="text-slate-900">J</span>
             </div>
             
             <nav className="hidden right md:flex space-x-8">
@@ -217,7 +217,7 @@ export default function Portfolio() {
             />
               </div>
               <h1 className="text-6xl md:text-3xl font-bold text-slate-900 mb-4">
-                Bemazava <span className="text-black">Julio</span>
+                Bemazava <span className="text-slate-900">Julio</span>
               </h1>
               <p className="text-xl md:text-2xl font-bold text-slate-600 mb-2">
                 Full Stack Web Developer
@@ -284,11 +284,11 @@ export default function Portfolio() {
                 </p>
                 
                 <div className="grid grid-cols-2 gap-4 mt-8">
-                  <div className="text-center p-4 bg-black rounded-lg">
+                  <div className="text-center p-4 bg-slate-900 rounded-lg">
                     <div className="text-2xl font-bold text-white">3+</div>
                     <div className="text-sm text-white">Years of experience</div>
                   </div>
-                  <div className="text-center p-4 bg-black rounded-lg">
+                  <div className="text-center p-4 bg-slate-900 rounded-lg">
                     <div className="text-2xl font-bold text-white">5+</div>
                     <div className="text-sm text-white">Completed projects</div>
                   </div>
@@ -317,7 +317,7 @@ export default function Portfolio() {
                   <CardContent className="p-6">
                     <div className="flex items-center space-x-4 mb-4">
                       <div className="w-12 h-12  rounded-lg flex items-center justify-center">
-                        <Server className="w-6 h-6 text-black" />
+                        <Server className="w-6 h-6 text-slate-900" />
                       </div>
                       <div>
                         <h3 className="font-semibold text-slate-900">Backend</h3>
@@ -334,7 +334,7 @@ export default function Portfolio() {
                   <CardContent className="p-6">
                     <div className="flex items-center space-x-4 mb-4">
                       <div className="w-12 h-12  rounded-lg flex items-center justify-center">
-                        <Database className="w-6 h-6 text-black" />
+                        <Database className="w-6 h-6 text-slate-900" />
                       </div>
                       <div>
                         <h3 className="font-semibold text-slate-900">Database</h3>
@@ -393,7 +393,7 @@ export default function Portfolio() {
                           </div>
                           <div className="w-full bg-slate-200 rounded-full h-2">
                             <div 
-                              className="bg-black h-2 rounded-full transition-all duration-1000"
+                              className="bg-slate-900 h-2 rounded-full transition-all duration-1000"
                               style={{ width: `${skill.level}%` }}
                             />
                           </div>
@@ -463,7 +463,7 @@ export default function Portfolio() {
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-4 right-4">
-                      <Badge className="bg-black">{project.category}</Badge>
+                      <Badge className="bg-slate-900">{project.category}</Badge>
                     </div>
                   </div>
                   <CardContent className="p-6">
