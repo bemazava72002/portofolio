@@ -232,7 +232,7 @@ export default function Portfolio() {
               <Button 
                 size="lg" 
                 onClick={() => scrollToSection('projects')}
-                className="bg-black"
+                className="bg-slate-900"
               >
                 Get in touch my project
               </Button>
