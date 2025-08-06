@@ -479,7 +479,7 @@ export default function Portfolio() {
                     <div className="flex space-x-4">
 
                       <a href={project.demo}>
-                      <Button size="sm" className="flex items-center space-x-2">
+                      <Button size="sm" className="flex items-center space-x-2 bg-slate-900">
                         <ExternalLink className="w-4 h-4" />
                         <span>Demo</span>
                       </Button>
