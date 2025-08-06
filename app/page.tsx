@@ -223,8 +223,8 @@ export default function Portfolio() {
                 Full Stack Web Developer
               </p>
               <p className="text-lg text-slate-500 max-w-2xl mx-auto">
-                Passionate about building modern and high-performance 
-                web applications with Node.js, React.js, Next.js, Django, Spring Boot
+                Passionate full stack developer with hands-on experience designing and deploying modern, high-performance web applications using Node.js, React.js, Next.js, Django, and Spring Boot. 
+                Delivered scalable solutions that effectively address operational needs and enhance user experience.
               </p>
             </div>
             
